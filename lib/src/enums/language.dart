@@ -217,7 +217,7 @@ enum Language {
   l_is, // Prefixed with `l_` for Dart reserved keyword
 
   /// Ido
-  io,
+  // io,
 
   /// Igbo
   ig,
