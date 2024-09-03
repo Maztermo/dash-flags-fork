@@ -12,23 +12,44 @@ import '../extensions/extensions.dart';
 ///
 /// If you have the `Language Code` as `String` and you want to get the corresponding [Language] enum member, then you can use [fromCode] method.
 enum Language {
+  /// Abkhazian
+  ab,
+
+  /// Afar
+  aa,
+
   /// Afrikaans
   af,
 
   /// Akan
   ak,
 
+  /// Albanian
+  sq,
+
   /// Amharic
   am,
-
-  /// Arabic (Iraq)
-  ar_iq,
 
   /// Arabic
   ar,
 
+  /// Arabic (Iraq) - Commented out as it's not in the first list
+  // ar_iq,
+
+  /// Aragonese
+  an,
+
+  /// Armenian
+  hy,
+
   /// Assamese
-  l_as,
+  l_as, // Prefixed with `l_` for Dart reserved keyword
+
+  /// Avaric
+  av,
+
+  /// Avestan
+  ae,
 
   /// Aymara
   ay,
@@ -36,119 +57,137 @@ enum Language {
   /// Azerbaijani
   az,
 
-  /// Belarusian
-  be,
-
-  /// Bulgarian
-  bg,
-
-  /// Bhojpuri
-  bho,
-
-  /// Bislama
-  bi,
-
   /// Bambara
   bm,
 
-  /// Bengali
-  bn,
-
-  /// Bosnian
-  bs,
-
-  /// Catalan
-  ca,
-
-  /// Cebuano
-  ceb,
-
-  /// Chamorro
-  ch,
-
-  /// Mari
-  chm,
-
-  /// Corsican
-  co,
-
-  /// Czech
-  cs,
-
-  /// Welsh
-  cy,
-
-  /// Danish
-  da,
-
-  /// German
-  de,
-
-  /// Divehi
-  dv,
-
-  /// Dzongkha
-  dz,
-
-  /// Greek
-  el,
-
-  /// English (Australia)
-  en_au,
-
-  /// English (Canada)
-  en_ca,
-
-  /// English (India)
-  en_in,
-
-  /// English (Nigeria)
-  en_ng,
-
-  /// English (New Zealand)
-  en_nz,
-
-  /// English (United States)
-  en_us,
-
-  /// English (South Africa)
-  en_za,
-
-  /// English
-  en,
-
-  /// Spanish
-  es,
-
-  /// Estonian
-  et,
+  /// Bashkir
+  ba,
 
   /// Basque
   eu,
 
-  /// Persian
-  fa,
+  /// Belarusian
+  be,
 
-  /// Finnish
-  fi,
+  /// Bengali
+  bn,
 
-  /// Filipino
-  fil,
+  /// Bihari Languages
+  bh, // Adjusted to match the first list
 
-  /// Fijian
-  fj,
+  /// Bislama
+  bi,
+
+  /// Bosnian
+  bs,
+
+  /// Breton
+  br,
+
+  /// Bulgarian
+  bg,
+
+  /// Burmese
+  my,
+
+  /// Catalan
+  ca,
+
+  /// Central Khmer
+  km,
+
+  /// Chamorro
+  ch,
+
+  /// Chechen
+  ce,
+
+  /// Chewa (Nyanja)
+  ny, // Both referred to as `Chewa (Nyanja)`
+
+  /// Chinese (Simplified)
+  zh_Hans,
+
+  /// Chinese (Traditional)
+  zh_Hant,
+
+  /// Church Slavonic
+  cu,
+
+  /// Chuvash
+  cv,
+
+  /// Cornish
+  kw,
+
+  /// Corsican
+  co,
+
+  /// Cree
+  cr,
+
+  /// Croatian
+  hr,
+
+  /// Czech
+  cs,
+
+  /// Danish
+  da,
+
+  /// Dhivehi
+  dv,
+
+  /// Dutch
+  nl,
+
+  /// Dzongkha
+  dz,
+
+  /// English
+  en,
+
+  /// Esperanto
+  eo,
+
+  /// Estonian
+  et,
+
+  /// Ewe
+  ee,
 
   /// Faroese
   fo,
 
+  /// Fijian
+  fj,
+
+  /// Finnish
+  fi,
+
   /// French
   fr,
 
-  /// Irish
-  ga,
+  /// Fulah
+  ff,
+
+  /// Gaelic
+  gd,
 
   /// Galician
   gl,
+
+  /// Ganda
+  lg,
+
+  /// Georgian
+  ka,
+
+  /// German
+  de,
+
+  /// Greek
+  el,
 
   /// Guarani
   gn,
@@ -156,14 +195,11 @@ enum Language {
   /// Gujarati
   gu,
 
-  /// Manx
-  gv,
+  /// Haitian
+  ht,
 
   /// Hausa
   ha,
-
-  /// Hawaiian
-  haw,
 
   /// Hebrew
   he,
@@ -174,29 +210,35 @@ enum Language {
   /// Hiri Motu
   ho,
 
-  /// Croatian
-  hr,
-
-  /// Haitian
-  ht,
-
   /// Hungarian
   hu,
 
-  /// Armenian
-  hy,
+  /// Icelandic
+  l_is, // Prefixed with `l_` for Dart reserved keyword
 
-  /// Indonesian
-  id,
+  /// Ido
+  io,
 
   /// Igbo
   ig,
 
-  /// Iloko
-  ilo,
+  /// Indonesian
+  id,
 
-  /// Icelandic
-  l_is,
+  /// Interlingua
+  ia,
+
+  /// Interlingue
+  ie,
+
+  /// Inuktitut
+  iu,
+
+  /// Inupiaq
+  ik,
+
+  /// Irish
+  ga,
 
   /// Italian
   it,
@@ -207,47 +249,59 @@ enum Language {
   /// Javanese
   jv,
 
-  /// Georgian
-  ka,
-
-  /// Kazakh
-  kk,
-
   /// Kalaallisut
   kl,
-
-  /// Central Khmer
-  km,
 
   /// Kannada
   kn,
 
-  /// Korean
-  ko,
+  /// Kanuri
+  kr,
 
-  /// Krio
-  kri,
+  /// Kashmiri
+  ks,
 
-  /// Kurdish
-  ku,
+  /// Kazakh
+  kk,
+
+  /// Kikuyu
+  ki,
+
+  /// Kinyarwanda
+  rw,
 
   /// Kirghiz
   ky,
 
-  /// Latin
-  la,
+  /// Komi
+  kv,
 
-  /// Luxembourgish
-  lb,
+  /// Kongo
+  kg,
 
-  /// Ganda
-  lg,
+  /// Korean
+  ko,
 
-  /// Lingala
-  ln,
+  /// Kuanyama
+  kj,
+
+  /// Kurdish
+  ku,
 
   /// Lao
   lo,
+
+  /// Latin
+  la,
+
+  /// Latvian
+  lv,
+
+  /// Limburgan
+  li,
+
+  /// Lingala
+  ln,
 
   /// Lithuanian
   lt,
@@ -255,104 +309,140 @@ enum Language {
   /// Luba-Katanga
   lu,
 
-  /// Latvian
-  lv,
-
-  /// Malagasy
-  mg,
-
-  /// Marshallese
-  mh,
-
-  /// Maori
-  mi,
+  /// Luxembourgish
+  lb,
 
   /// Macedonian
   mk,
 
-  /// Malayalam
-  ml,
-
-  /// Mongolian
-  mn,
-
-  /// Marathi
-  mr,
-
-  /// Western Mari
-  mrj,
+  /// Malagasy
+  mg,
 
   /// Malay
   ms,
 
+  /// Malayalam
+  ml,
+
   /// Maltese
   mt,
 
-  /// Burmese
-  my,
+  /// Manx
+  gv,
+
+  /// Maori
+  mi,
+
+  /// Marathi
+  mr,
+
+  /// Marshallese
+  mh,
+
+  /// Mongolian
+  mn,
 
   /// Nauru
   na,
 
-  /// Norwegian Bokmål
-  nb,
+  /// Navajo
+  nv,
 
   /// North Ndebele
   nd,
 
+  /// South Ndebele
+  nr,
+
+  /// Ndonga
+  ng,
+
   /// Nepali
   ne,
 
-  /// Dutch
-  nl,
-
-  /// Norwegian Nynorsk
-  nn,
+  /// Northern Sami
+  se,
 
   /// Norwegian
   no,
 
-  /// South Ndebele
-  nr,
+  /// Norwegian Nynorsk
+  nn,
 
-  /// Chichewa
-  ny,
+  /// Occitan
+  oc,
 
-  /// Punjabi
+  /// Ojibwa
+  oj,
+
+  /// Oriya
+  or,
+
+  /// Oromo
+  om,
+
+  /// Ossetian
+  os,
+
+  /// Pali
+  pi,
+
+  /// Panjabi
   pa,
 
-  /// Papiamento
-  pap,
+  /// Persian
+  fa,
 
   /// Polish
   pl,
 
-  /// Pashto
-  ps,
-
-  /// Portuguese
+  /// Portuguese (Brazil)
   pt_br,
 
   /// Portuguese
   pt,
 
-  /// Rundi
-  rn,
+  /// Pushto
+  ps,
+
+  /// Quechua
+  qu,
 
   /// Romanian
   ro,
 
+  /// Romansh
+  rm,
+
+  /// Rundi
+  rn,
+
   /// Russian
   ru,
 
-  /// Kinyarwanda
-  rw,
-
-  /// Sindhi
-  sd,
+  /// Samoan
+  sm,
 
   /// Sango
   sg,
+
+  /// Sanskrit
+  sa,
+
+  /// Sardinian
+  sc,
+
+  /// Serbian
+  sr,
+
+  /// Shona
+  sn,
+
+  /// Sichuan Yi
+  ii,
+
+  /// Sindhi
+  sd,
 
   /// Sinhala
   si,
@@ -363,65 +453,74 @@ enum Language {
   /// Slovenian
   sl,
 
-  /// Samoan
-  sm,
-
-  /// Shona
-  sn,
-
   /// Somali
   so,
-
-  /// Albanian
-  sq,
-
-  /// Serbian
-  sr,
-
-  /// Swati
-  ss,
 
   /// Southern Sotho
   st,
 
+  /// Spanish
+  es,
+
   /// Sundanese
   su,
-
-  /// Swedish
-  sv,
 
   /// Swahili
   sw,
 
-  /// Tamil
-  ta,
+  /// Swati
+  ss,
 
-  /// Telugu
-  te,
-
-  /// Tajik
-  tg,
-
-  /// Thai
-  th,
-
-  /// Turkmen
-  tk,
+  /// Swedish
+  sv,
 
   /// Tagalog
   tl,
 
+  /// Tahitian
+  ty,
+
+  /// Tajik
+  tg,
+
+  /// Tamil
+  ta,
+
+  /// Tatar
+  tt,
+
+  /// Telugu
+  te,
+
+  /// Thai
+  th,
+
+  /// Tibetan
+  bo,
+
+  /// Tigrinya
+  ti,
+
+  /// Tonga (Tonga Islands)
+  to,
+
+  /// Tsonga
+  ts,
+
   /// Tswana
   tn,
-
-  /// Tonga
-  to,
 
   /// Turkish
   tr,
 
-  /// Tahitian
-  ty,
+  /// Turkmen
+  tk,
+
+  /// Twi
+  tw,
+
+  /// Uighur
+  ug,
 
   /// Ukrainian
   uk,
@@ -432,14 +531,29 @@ enum Language {
   /// Uzbek
   uz,
 
+  /// Venda
+  ve,
+
   /// Vietnamese
   vi,
 
+  /// Volapük
+  vo,
+
+  /// Walloon
+  wa,
+
+  /// Welsh
+  cy,
+
+  /// Western Frisian
+  fy,
+
+  /// Wolof
+  wo,
+
   /// Xhosa
   xh,
-
-  /// Unknown Language
-  xx,
 
   /// Yiddish
   yi,
@@ -447,17 +561,23 @@ enum Language {
   /// Yoruba
   yo,
 
-  /// Yucateco
-  yua,
-
-  /// Chinese - Traditional
-  zh_TW,
-
-  /// Chinese
-  zh,
+  /// Zhuang
+  za,
 
   /// Zulu
-  zu;
+  zu,
+
+  /// Yucateco - Not in the first list
+  // yua,
+
+  /// Unknown Language
+  xx,
+
+  /// Chinese - Traditional - Aligned with zh_Hant
+  zh_TW, // Can be renamed to zh_Hant for consistency
+
+  /// Chinese - General
+  zh;
 
   /// Returns the [Language] enum member from the given [languageCode] String.
   ///
