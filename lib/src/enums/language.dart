@@ -256,16 +256,16 @@ enum Language {
   kn,
 
   /// Kanuri
-  kr,
+  // kr,
 
   /// Kashmiri
-  ks,
+  // ks,
 
   /// Kazakh
   kk,
 
   /// Kikuyu
-  ki,
+  // ki,
 
   /// Kinyarwanda
   rw,
@@ -277,7 +277,7 @@ enum Language {
   kv,
 
   /// Kongo
-  kg,
+  // kg,
 
   /// Korean
   ko,
