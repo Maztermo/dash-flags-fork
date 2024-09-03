@@ -13,7 +13,7 @@ import '../extensions/extensions.dart';
 /// If you have the `Language Code` as `String` and you want to get the corresponding [Language] enum member, then you can use [fromCode] method.
 enum Language {
   /// Abkhazian
-  ab,
+  // ab,
 
   /// Afar
   aa,
@@ -37,7 +37,7 @@ enum Language {
   // ar_iq,
 
   /// Aragonese
-  an,
+  // an,
 
   /// Armenian
   hy,
@@ -61,7 +61,7 @@ enum Language {
   bm,
 
   /// Bashkir
-  ba,
+  // ba,
 
   /// Basque
   eu,
@@ -100,7 +100,7 @@ enum Language {
   ch,
 
   /// Chechen
-  ce,
+  // ce,
 
   /// Chewa (Nyanja)
   ny, // Both referred to as `Chewa (Nyanja)`
@@ -115,7 +115,7 @@ enum Language {
   cu,
 
   /// Chuvash
-  cv,
+  // cv,
 
   /// Cornish
   kw,
@@ -124,7 +124,7 @@ enum Language {
   co,
 
   /// Cree
-  cr,
+  // cr,
 
   /// Croatian
   hr,
@@ -154,7 +154,7 @@ enum Language {
   et,
 
   /// Ewe
-  ee,
+  // ee,
 
   /// Faroese
   fo,
@@ -172,7 +172,7 @@ enum Language {
   ff,
 
   /// Gaelic
-  gd,
+  // gd,
 
   /// Galician
   gl,
@@ -593,7 +593,8 @@ enum Language {
     final mappedLanguageCode = languageCode.asMappedLanguageCode;
 
     return Language.values.firstWhere(
-      (language) => language.name.toLowerCase() == mappedLanguageCode,
+      // Account for string codes that didnt account for the dart reserved keywords
+      (language) => (language.name.toLowerCase() == mappedLanguageCode) || (language.name.toLowerCase() == 'l_$mappedLanguageCode'),
       orElse: () {
         final languageCodeParts = mappedLanguageCode.split('_');
 
