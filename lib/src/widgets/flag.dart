@@ -1,6 +1,5 @@
 // Flutter imports:
 import 'package:flutter/material.dart';
-
 // Package imports:
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -22,14 +21,18 @@ class Flag extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      child: SvgPicture.asset(
-        flagAsset,
-        alignment: Alignment.bottomCenter,
-        height: height,
-        package: 'dash_flags',
-        fit: BoxFit.fill,
-      ),
-    );
+    try {
+      return SizedBox(
+        child: SvgPicture.asset(
+          flagAsset,
+          alignment: Alignment.bottomCenter,
+          height: height,
+          package: 'dash_flags',
+          fit: BoxFit.fill,
+        ),
+      );
+    } catch (e) {
+      return SizedBox(height: height);
+    }
   }
 }
