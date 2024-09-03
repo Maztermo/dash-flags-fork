@@ -265,7 +265,7 @@ enum Language {
   kk,
 
   /// Kikuyu
-  ki,
+  // ki,
 
   /// Kinyarwanda
   rw,
