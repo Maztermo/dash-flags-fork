@@ -147,8 +147,8 @@ enum Language {
   /// English
   en,
 
-  /// Esperanto
-  eo,
+  // /// Esperanto
+  // eo,
 
   /// Estonian
   et,
