@@ -226,10 +226,10 @@ enum Language {
   id,
 
   /// Interlingua
-  ia,
+  // ia,
 
   /// Interlingue
-  ie,
+  // ie,
 
   /// Inuktitut
   iu,
@@ -396,8 +396,8 @@ enum Language {
   /// Polish
   pl,
 
-  /// Portuguese (Brazil)
-  pt_br,
+  // /// Portuguese (Brazil)
+  // pt_br,
 
   /// Portuguese
   pt,
