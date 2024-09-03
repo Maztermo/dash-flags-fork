@@ -259,7 +259,7 @@ enum Language {
   // kr,
 
   /// Kashmiri
-  ks,
+  // ks,
 
   /// Kazakh
   kk,
