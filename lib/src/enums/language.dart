@@ -256,7 +256,7 @@ enum Language {
   kn,
 
   /// Kanuri
-  kr,
+  // kr,
 
   /// Kashmiri
   ks,
