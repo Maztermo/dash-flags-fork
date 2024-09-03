@@ -298,7 +298,7 @@ enum Language {
   lv,
 
   /// Limburgan
-  li,
+  // li,
 
   /// Lingala
   ln,
@@ -346,7 +346,7 @@ enum Language {
   na,
 
   /// Navajo
-  nv,
+  // nv,
 
   /// North Ndebele
   nd,
@@ -361,7 +361,7 @@ enum Language {
   ne,
 
   /// Northern Sami
-  se,
+  // se,
 
   /// Norwegian
   no,
@@ -370,16 +370,16 @@ enum Language {
   nn,
 
   /// Occitan
-  oc,
+  // oc,
 
   /// Ojibwa
-  oj,
+  // oj,
 
   /// Oriya
-  or,
+  // or,
 
   /// Oromo
-  om,
+  // om,
 
   /// Ossetian
   os,
@@ -406,7 +406,7 @@ enum Language {
   ps,
 
   /// Quechua
-  qu,
+  // qu,
 
   /// Romanian
   ro,
@@ -487,7 +487,7 @@ enum Language {
   ta,
 
   /// Tatar
-  tt,
+  // tt,
 
   /// Telugu
   te,
@@ -496,10 +496,10 @@ enum Language {
   th,
 
   /// Tibetan
-  bo,
+  // bo,
 
   /// Tigrinya
-  ti,
+  // ti,
 
   /// Tonga (Tonga Islands)
   to,
@@ -517,10 +517,10 @@ enum Language {
   tk,
 
   /// Twi
-  tw,
+  // tw,
 
   /// Uighur
-  ug,
+  // ug,
 
   /// Ukrainian
   uk,
@@ -532,7 +532,7 @@ enum Language {
   uz,
 
   /// Venda
-  ve,
+  // ve,
 
   /// Vietnamese
   vi,
